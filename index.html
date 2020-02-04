@@ -1,1 +1,67 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><link href="https://fonts.googleapis.com/css?family=Roboto:100:300,400,500,700,900|Material+Icons" rel=stylesheet><title>ipcc</title><link as=style href=/css/app.2cabd008.css rel=preload><link as=style href=/css/chunk-vendors.bf6b463a.css rel=preload><link as=script href=/js/app.0255df25.js rel=preload><link as=script href=/js/chunk-vendors.a6c1be55.js rel=preload><link href=/css/chunk-vendors.bf6b463a.css rel=stylesheet><link href=/css/app.2cabd008.css rel=stylesheet></head><body><noscript><strong>We're sorry but ipcc doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.a6c1be55.js></script><script src=/js/app.0255df25.js></script></body></html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/master.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <form class="card" autocomplete="off">
+            <div class="card-content">
+                <div class="row">
+                    <div class="input-field s12">
+                        <input placeholder="Stückzahl" id="count" type="text" class="validate">
+                        <label for="count">Stückzahl</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field s12">
+                        <input placeholder="Kaufkurs" id="buy" type="text" class="validate" autocomplete="off">
+                        <label for="buy">Kaufkurs</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field s12">
+                        <input placeholder="Verkaufskurs" id="pay" type="text" class="validate">
+                        <label for="pay">Verkaufskurs</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card-action">
+                <ul class="collection" style="border: none;">
+                    <li class="collection-item">Kaufpreis Gesamt: <span id="responseBuy"></span> </li>
+                    <li class="collection-item">Verkaufspreis Gesamt: <span id="responsePay"></span></li>
+                    <li class="collection-item">Kursgewinn: <span id="responseProfit"></span> </li>
+                </ul>
+
+
+            </div>
+        </form>
+
+
+        <div id="calculatedContainer" class="card" style="display: none;">
+            <div class="card-content">
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Page Content goes here -->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/imask.min.js"></script>
+    <script type="text/javascript" src="js/master.js"></script>
+</body>
+
+</html>
